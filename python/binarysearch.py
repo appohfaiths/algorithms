@@ -1,7 +1,6 @@
 def binary_search(array, target):
     left = 0
     right = len(array) - 1
-
     while left <= right:
         mid = int((left + right) / 2)
         if array[mid] == target:
