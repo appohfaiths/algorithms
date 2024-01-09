@@ -2,6 +2,7 @@
 using Sum;
 using Fibonacci;
 using BinarySearch;
+using SortingAlgorithms;
 
 // Sum
 // int sum = SUMOFNUMBERS.ArraySum(new List<int> { 1, 2, 3, 4, 5 });
@@ -27,6 +28,7 @@ foreach (int number in fibonacciSequence)
 */
 
 // Binary Search
+/*
 var array = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 int targetValue = 7;
 
@@ -38,3 +40,8 @@ else
 {
     Console.WriteLine($"Target  {targetValue} was not found in the array");
 }
+*/
+
+var unsortedArray = new List<int> { 3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5 };
+var sortedArray = Quick_Sort.QuickSort(unsortedArray);
+Console.WriteLine(sortedArray);
